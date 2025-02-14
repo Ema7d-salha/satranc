@@ -1,0 +1,163 @@
+a{
+    text-decoration: none;
+    color: green;
+}
+ul {
+    list-style: none;
+}
+/*اول ديف توصيتها في النص*/
+.s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*المربع الرمادي*/
+.s2 {
+    border-radius: 5px;
+    border-bottom: 20px solid rgb(230, 226, 226);
+    border-top: 20px solid rgb(230, 226, 226);
+    border-left: 20px solid rgb(230, 226, 226);
+    border-right: 20px solid rgb(230, 226, 226);
+    width: 720px;
+    height: 560px;
+    
+}
+/*الخط الثاني الاحمر*/
+.s3 {
+    display: flex;
+    border: 1px solid rgb(196, 18, 18); 
+}
+/*المربعات السود اول سطر من تحت*/
+.m1 {
+    width: 98px;
+    height: 70px;
+    background: green;
+    margin-right: 95px;
+    margin-top: 490px;
+}
+/*المربعات الابيض اول سطر من تحت*/
+.m2 {
+    background: wheat;
+    width: 90px;
+    height: 70px;
+    margin-left: -95px;
+    margin-top: 490px;
+}
+/*المربعات تبع اول سطر من تحت الاول صارو بالثالث */
+.s4 {
+    display: flex;
+    margin-top: -701px;
+}
+/*السطر الثاني من تحت*/
+.s5 {
+    display: flex;
+    
+}
+.m3 {
+    background: wheat;
+    width: 90px;
+    height: 70px;
+    
+}
+
+.m4 {
+    background: green;
+    width: 90px;
+    height: 70px;
+}
+/*السطر الرابع*/
+.s6 {
+    display: flex;
+    margin-top: -210px;
+}
+/*السطر الخامس*/
+.s7 {
+    display: flex;
+    margin-top: -630px;
+}
+/*السطر السادس*/
+.s8 {
+display: flex;
+margin-top: -140px;
+}
+/*السطر السابع*/
+.s9 {
+    display: flex;
+    margin-top: -629px;
+}
+/*السطر الثامن*/
+.s10 {
+    display: flex;
+    margin-top: -140px;
+}
+/*الاحرف تحت*/
+.r {
+    display: flex;
+    margin-top: 470px;
+    
+}
+.rakam {
+    
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: 40px;
+    padding-right: 85px;
+    
+}
+.rakam1 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-right: 35px;
+    
+}
+/*الاحرف فوق*/
+.r2 {
+    display: flex;
+    margin-top: -580px;
+    margin-left: -710px;
+}
+
+.rakam2 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: 40px;
+    padding-right: 85px;
+}
+.rakam3 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-right: 35px;
+}
+/*الارقام اليمين*/
+.sa {
+    margin-top: -550px;
+}
+.say{
+    font-size: large;
+    font-family: sans-serif;
+    margin-right: 100px;
+    margin-bottom: 48px;
+}
+.say1 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-bottom: 55px;
+    margin-right: 100px;
+}
+/*الارقم اليساريه*/
+.sa2 {
+    margin-top: -550px;
+}
+.say2{
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: -845px;
+    margin-bottom: 48px;
+}
+.say3{
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: -845px;
+    margin-bottom: 55px;
+}

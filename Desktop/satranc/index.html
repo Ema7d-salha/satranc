@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="s1">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">bire oynamak</a></li>
+                <li><a href="#">aklı bigisyar oynamk</a></li>
+            </ul>
+        </nav>
+    
+        <header class="s2">
+            <div class="s3">
+            <div class="square m1" id="11" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/WhatsApp_Image_2024-05-10_at_12.00.00_AM__5_-removebg-preview.png" alt="" width="70px" data-piece="castle"  data-color="white" onclick="moveCastle(this)"></div>
+            <div class="square m2" id="12" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/at siyah.png" alt="" width="70px" data-piece="horse" data-color="white" onclick="moveHorse(this)"></div>
+            <div class="square m1" id="13" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/file_beyaz_2-removebg-preview.png" alt="" width="70px" data-piece="elephant" data-color="white" onclick="moveElephant(this)"></div>
+            <div class="square m2" id="14" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/vazir_beyaz_2-removebg-preview.png" alt="" width="70px" data-piece="king" data-color="white" onclick="moveKing(this)"></div>
+            <div class="square m1" id="15" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz taş.png" alt="" width="70px" data-piece="minister" data-color="white" onclick="moveMinister(this)"></div>
+            <div class="square m2" id="16" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/file_beyaz_2-removebg-preview.png" data-piece="elephant" data-color="white" alt="" width="70px" onclick="moveElephant(this)"></div>
+            <div class="square m1" id="17" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/at siyah.png" width="70px" data-piece="horse" data-color="white" onclick="moveHorse(this)"></div>
+            <div class="square m2" id="18" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/WhatsApp_Image_2024-05-10_at_12.00.00_AM__5_-removebg-preview.png" alt="" width="70px" data-piece="castle" data-color="white" onclick="moveCastle(this)"></div>
+        </div>
+        <!--السطر الثالث -->
+        <div class="s4">
+
+            <div class="m1" id="31" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="32" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="33" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="34" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="35" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="36" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="37" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="38" onclick="placePiece('pieceId','targetId')"></div>
+        </div>  
+        <!--السطر الثاني الجنود البيض-->
+        <div class="s5">
+        <div class="square m3" id="21" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white" ></div>
+        <div class="square m4" id="22" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white" ></div>
+        <div class="square m3" id="23" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white" ></div>
+        <div class="square m4" id="24" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white" ></div>
+        <div class="square m3" id="25" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white" ></div>
+        <div class="square m4" id="26" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white"></div>
+        <div class="square m3" id="27" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white"></div>
+        <div class="square m4" id="28" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="myImage" data-piece="pawn" data-color="white"> <!-- onclick="askerPiece(this)"--></div>
+        </div>
+        <!--السطر الرابيع-->
+        <div class="s6">
+            <div class="m3" id="41" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="42" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="43" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="44" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="45" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="46" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="47" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="48" onclick="placePiece('pieceId','targetId')"></div>
+        </div>
+        <!--السطر الخامس-->
+        <div class="s7">
+            <div class="m1" id="51" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="52" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="53" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="54" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="55" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="56" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="57" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="58" onclick="placePiece('pieceId','targetId')"></div>
+        </div>
+        <!--السطر السادس-->
+        <div class="s8">
+            <div class="m3" id="61" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="62" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="63" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="64" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="65" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="66" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="67" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="68" onclick="placePiece('pieceId','targetId')"></div>
+        </div>
+        <!--السطر السابع الجنود السود-->
+        <div class="s9">
+            <div class="square m1" id="71" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerSiyah(this)"></div>
+            <div class="square m2" id="72" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerPiece(this)"></div>
+            <div class="square m1" id="73" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerPiece(this)"></div>
+            <div class="square m2" id="74" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerPiece(this)"></div>
+            <div class="square m1" id="75" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerPiece(this)"></div>
+            <div class="square m2" id="76" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerPiece(this)"></div>
+            <div class="square m1" id="77" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerPiece(this)"></div>
+            <div class="square m2" id="78" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" data-piece="pawn1" data-color="black" onclick="askerPiece(this)"></div>
+        </div>
+        <!--السطر الثامن للأسود-->
+        <div class="s10">
+            <div class="square m3" id="81" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/kale siyah (2).png" alt="" width="70px" data-piece="castle1" data-color="black" onclick="moveCastle(this)"></div>
+            <div class="square m4" id="82" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_at2-removebg-preview.png" alt=""  width="70px" data-piece="horse1" data-color="black" onclick="moveHorse()"></div>
+            <div class="square m3" id="83" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/file siyah.png" alt="" width="70px"  data-piece="elephant1" data-color="black" onclick="moveElephant()"></div>
+            <div class="square m4" id="84" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_fazir-removebg-preview.png" alt="" width="70px" data-piece="king1" data-color="black" onclick="moveKing()"></div>
+            <div class="square m3" id="85" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_taş-removebg-preview.png" alt="" width="70px"  data-piece="minister1" data-color="black" onclick="moveMinister()"></div>
+            <div class="square m4" id="86" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/file siyah.png" alt="" width="70px" data-piece="elephant1" data-color="black" onclick="moveElephant()"></div>
+            <div class="square m3" id="87" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_at2-removebg-preview.png" alt="" width="70px" data-piece="horse1" data-color="black" onclick="moveHorse()"></div>
+            <div class="square m4" id="88" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/kale siyah (2).png" alt="" width="70px" data-piece="castle1" data-color="black" onclick="moveCastle()"></div>
+            </div>
+     <!--   <div class="r">
+        <p class="rakam">a</p>
+        <p class="rakam1">b</p>
+        <p class="rakam">c</p>
+        <p class="rakam1">d</p>
+        <p class="rakam">e</p>
+        <p class="rakam1">f</p>
+        <p class="rakam">g</p>
+        <p class="rakam1">h</p>
+        <div class="r2">
+        <p class="rakam2">a</p>
+        <p class="rakam3">b</p>
+        <p class="rakam2">c</p>
+        <p class="rakam3">d</p>
+        <p class="rakam2">e</p>
+        <p class="rakam3">f</p>
+        <p class="rakam2">g</p>
+        <p class="rakam3">h</p>
+    </div>
+    <div class="sa">
+        <p class="say">1</p>
+        <p class="say1">2</p>
+        <p class="say">3</p>
+        <p class="say1">4</p>
+        <p class="say">5</p>
+        <p class="say1">6</p>
+        <p class="say">7</p>
+        <p class="say1">8</p>
+    </div>
+    <div class="sa2">
+        <p class="say2">8</p>
+        <p class="say3">7</p>
+        <p class="say2">6</p> 
+        <p class="say3">5</p>
+        <p class="say2">4</p>
+        <p class="say3">3</p>
+        <p class="say2">2</p>
+        <p class="say3">1</p>
+    </div>-->
+        </div>
+        </header>
+    </div>
+    
+    <script src="e.js">
+        
+    </script>
+</body>
+</html>
