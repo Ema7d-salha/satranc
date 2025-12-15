@@ -1,0 +1,275 @@
+.background-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  /* الأيقونات تتحرك من فوق لتحت بشكل مستمر */
+  .background-icons img {
+    position: absolute;
+    opacity: 0.5; /* وضوح أعلى */
+    width: 100px;  /* حجم أكبر */
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.3)); /* ظل خفيف */
+    animation: floatDown linear infinite;
+    user-select: none;
+  }
+  
+  
+  
+  /* تحريك الأيقونة من -100px فوق إلى أسفل الشاشة */
+  @keyframes floatDown {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(110vh);
+    }
+  }
+  
+/* خلفية الصفحة كاملة */
+body {
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  
+    /* لتوسيط المحتوى أفقياً ورأسياً */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* زر التنقل على جنب (مثلاً على الشمال أو اليمين) */
+  /* العنصر nav ثابت على الشمال */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  /* قائمة nav بدون تنسيق */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* الرابط داخل القائمة */
+  nav ul li a {
+    display: inline-block;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(75, 108, 183, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* تأثير عند المرور على الرابط */
+  nav ul li a:hover {
+    background-color: #ffd700;
+    color: #ffd700;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+  }
+  
+  /* تأثير عند الضغط */
+  nav ul li a:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(75, 108, 183, 0.6);
+  }
+  
+  
+  /* حاوية رقعة الشطرنج */
+  .s1 {
+    /* حجم ثابت مع تمركز */
+    width: 760px;
+    height: 600px;
+  
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+
+.s2 {
+    border-radius: 5px;
+    border-bottom: 20px solid rgb(230, 226, 226);
+    border-top: 20px solid rgb(230, 226, 226);
+    border-left: 20px solid rgb(230, 226, 226);
+    border-right: 20px solid rgb(230, 226, 226);
+    width: 720px;
+    height: 560px;
+    
+}
+/*الخط الثاني الاحمر*/
+.s3 {
+    display: flex;
+    border: 1px solid rgb(196, 18, 18); 
+}
+/*المربعات السود اول سطر من تحت*/
+.m1 {
+    width: 98px;
+    height: 70px;
+    background: green;
+    margin-right: 95px;
+    margin-top: 490px;
+}
+/*المربعات الابيض اول سطر من تحت*/
+.m2 {
+    background: wheat;
+    width: 90px;
+    height: 70px;
+    margin-left: -95px;
+    margin-top: 490px;
+}
+/*المربعات تبع اول سطر من تحت الاول صارو بالثالث */
+.s4 {
+    display: flex;
+    margin-top: -701px;
+}
+/*السطر الثاني من تحت*/
+.s5 {
+    display: flex;
+    
+}
+.m3 {
+    background: wheat;
+    width: 90px;
+    height: 70px;
+    
+}
+
+.m4 {
+    background: green;
+    width: 90px;
+    height: 70px;
+}
+/*السطر الرابع*/
+.s6 {
+    display: flex;
+    margin-top: -210px;
+}
+/*السطر الخامس*/
+.s7 {
+    display: flex;
+    margin-top: -630px;
+}
+/*السطر السادس*/
+.s8 {
+display: flex;
+margin-top: -140px;
+}
+/*السطر السابع*/
+.s9 {
+    display: flex;
+    margin-top: -629px;
+}
+/*السطر الثامن*/
+.s10 {
+    display: flex;
+    margin-top: -140px;
+}
+/*الاحرف تحت*/
+.r {
+    display: flex;
+    margin-top: 470px;
+    
+}
+.rakam {
+    
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: 40px;
+    padding-right: 85px;
+    
+}
+.rakam1 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-right: 35px;
+    
+}
+/*الاحرف فوق*/
+.r2 {
+    display: flex;
+    margin-top: -580px;
+    margin-left: -710px;
+}
+
+.rakam2 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: 40px;
+    padding-right: 85px;
+}
+.rakam3 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-right: 35px;
+}
+/*الارقام اليمين*/
+.sa {
+    margin-top: -550px;
+}
+.say{
+    font-size: large;
+    font-family: sans-serif;
+    margin-right: 100px;
+    margin-bottom: 48px;
+}
+.say1 {
+    font-size: large;
+    font-family: sans-serif;
+    margin-bottom: 55px;
+    margin-right: 100px;
+}
+/*الارقم اليساريه*/
+.sa2 {
+    margin-top: -550px;
+}
+.say2{
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: -845px;
+    margin-bottom: 48px;
+}
+.say3{
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: -845px;
+    margin-bottom: 55px;
+}
+
+.pointer{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

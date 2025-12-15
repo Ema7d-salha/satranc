@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>خلفية أيقونات شطرنج واضحة ومتحركة</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-icons {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .background-icons i {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 130px;
+    animation-name: floatDown;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes floatDown {
+    0% {
+      transform: translateY(-150px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh);
+      opacity: 1;
+    }
+  }
+
+  nav {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: rgba(0,0,0,0.15);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffd700;
+  }
+</style>
+</head>
+<body>
+
+<div class="background-icons" aria-hidden="true">
+  <i class="fas fa-chess-pawn"></i>
+  <i class="fas fa-chess-knight"></i>
+  <i class="fas fa-chess-bishop"></i>
+  <i class="fas fa-chess-rook"></i>
+  <i class="fas fa-chess-queen"></i>
+  <i class="fas fa-chess-king"></i>
+  <i class="fas fa-chess-pawn"></i>
+  <i class="fas fa-chess-knight"></i>
+  <i class="fas fa-chess-bishop"></i>
+</div>
+
+<nav>
+  <a href="index.html">bire oynamak</a>
+  <a href="#">aklı bigisyar oynamk</a>
+</nav>
+
+<script>
+  const icons = document.querySelectorAll('.background-icons i');
+
+  icons.forEach((icon) => {
+    icon.style.left = Math.random() * 90 + 'vw';
+    icon.style.top = Math.random() * 90 + 'vh';
+    icon.style.animationDuration = (25 + Math.random() * 25) + 's';
+    icon.style.animationDelay = (Math.random() * 20) + 's';
+  });
+</script>
+
+</body>
+</html>

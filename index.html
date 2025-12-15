@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-icons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" style="top: -100px; left: 5%; animation-duration: 15s;" alt="pawn" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg" style="top: -150px; left: 15%; animation-duration: 20s; animation-delay: 5s;" alt="rook" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chess_nlt45.svg/1024px-Chess_nlt45.svg.png" 
+        alt="knight" width="100" 
+        style="top: -200px; left: 10%; animation-duration: 18s; animation-delay: 3s; animation-name: floatDown; animation-timing-function: linear; animation-iteration-count: infinite; position: absolute; opacity: 0.35; user-select: none;" />
+         
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" style="top: -120px; right: 5%; animation-duration: 17s; animation-delay: 2s;" alt="pawn" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg" style="top: -160px; right: 15%; animation-duration: 22s; animation-delay: 6s;" alt="rook" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Chess_nlt45.svg/1024px-Chess_nlt45.svg.png" 
+        alt="knight" width="100" 
+        style="top: -200px; left: 10%; animation-duration: 18s; animation-delay: 3s; animation-name: floatDown; animation-timing-function: linear; animation-iteration-count: infinite; position: absolute; opacity: 0.35; user-select: none;" />
+         </div>
+      
+    <div class="s1">
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Ana Sayfa Dön</a></li>
+               
+            </ul>
+
+        </nav>
+       
+        <header class="s2">
+            
+        <div class="s3">
+            <div class="square m1" id="11" ><img src="img (2)/img/img/WhatsApp_Image_2024-05-10_at_12.00.00_AM__5_-removebg-preview.png" alt="" id="whiteRook1" width="70px" data-piece="castle" data-color="white" data-x ="0" data-y="1"></div>
+            <div class="square m2" id="12" ><img src="img (2)/img/img/at siyah.png" alt="" id="whiteKnight1" width="70px" data-piece="horse" data-color="white"></div>
+            <div class="square m1" id="13" ><img src="img (2)/img/img/file_beyaz_2-removebg-preview.png" alt="" id="whiteBishop1" width="70px" data-piece="elephant" data-color="white"></div>
+            <div class="square m2" id="14" ><img src="img (2)/img/img/vazir_beyaz_2-removebg-preview.png" alt="" id="whiteKing" width="70px" data-piece="king" data-color="white" data-type="king" ></div>
+            <div class="square m1" id="15" ><img src="img (2)/img/img/beyaz taş.png" alt="" id="whiteKing" width="70px" data-piece="minister" data-color="white" ></div>
+            <div class="square m2" id="16" ><img src="img (2)/img/img/file_beyaz_2-removebg-preview.png" id="whiteBishop2" data-piece="elephant" data-color="white" alt="" width="70px" ></div>
+            <div class="square m1" id="17" ><img src="img (2)/img/img/at siyah.png" alt="" width="70px" id="whiteKnight2" data-piece="horse" data-color="white" ></div>
+            <div class="square m2" id="18" ><img src="img (2)/img/img/WhatsApp_Image_2024-05-10_at_12.00.00_AM__5_-removebg-preview.png" alt="" id="whiteRook2" width="70px" data-piece="castle" data-color="white" data-x ="0" data-y="1"></div>
+        </div>
+        <!--السطر الثالث -->
+        <div class="s4">
+
+            <div class="m1" id="31" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="32" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="33" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="34" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="35" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="36" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="37" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="38" onclick="placePiece('pieceId','targetId')"></div>
+        </div>  
+        <!--السطر الثاني الجنود البيض-->
+        <div class="s5">
+        <div class="square m3" id="21" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn1" data-piece="pawn" data-color="white" ></div>
+        <div class="square m4" id="22" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn2" data-piece="pawn" data-color="white" ></div>
+        <div class="square m3" id="23" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn3" data-piece="pawn" data-color="white" ></div>
+        <div class="square m4" id="24" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn4" data-piece="pawn" data-color="white" ></div>
+        <div class="square m3" id="25" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn5" data-piece="pawn" data-color="white" ></div>
+        <div class="square m4" id="26" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn6" data-piece="pawn" data-color="white" ></div>
+        <div class="square m3" id="27" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn7" data-piece="pawn" data-color="white" ></div>
+        <div class="square m4" id="28" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/beyaz_asker-removebg-preview.png" alt="" width="70px" id="whitePawn8" data-piece="pawn" data-color="white" ></div>
+        </div>
+        <!--السطر الرابيع-->
+        <div class="s6">
+            <div class="m3" id="41" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="42" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="43" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="44" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="45" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="46" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="47" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="48" onclick="placePiece('pieceId','targetId')"></div>
+        </div>
+        <!--السطر الخامس-->
+        <div class="s7">
+            <div class="m1" id="51" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="52" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="53" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="54" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="55" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="56" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m1" id="57" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m2" id="58" onclick="placePiece('pieceId','targetId')"></div>
+        </div>
+        <!--السطر السادس-->
+        <div class="s8">
+            <div class="m3" id="61" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="62" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="63" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="64" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="65" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="66" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m3" id="67" onclick="placePiece('pieceId','targetId')"></div>
+            <div class="m4" id="68" onclick="placePiece('pieceId','targetId')"></div>
+        </div>
+        <!--السطر السابع الجنود السود-->
+        <div class="s9">
+            <div class="square m1" id="71" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn1" data-piece="pawn1" data-color="black" ></div>
+            <div class="square m2" id="72" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn2" data-piece="pawn1" data-color="black" ></div>
+            <div class="square m1" id="73" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn3" data-piece="pawn1" data-color="black" ></div>
+            <div class="square m2" id="74" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn4" data-piece="pawn1" data-color="black" ></div>
+            <div class="square m1" id="75" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn5" data-piece="pawn1" data-color="black" ></div>
+            <div class="square m2" id="76" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn6" data-piece="pawn1" data-color="black" ></div>
+            <div class="square m1" id="77" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn7" data-piece="pawn1" data-color="black" ></div>
+            <div class="square m2" id="78" onclick="placePiece('pieceId','targetId')"><img src="img (2)/img/img/siyah_ask-removebg-preview.png" alt="" width="70px" id="blackPawn8" data-piece="pawn1" data-color="black" ></div>
+        </div>
+        <!--السطر الثامن للأسود-->
+        <div class="s10">
+            <div class="square m3" id="81" ><img src="img (2)/img/img/kale siyah (2).png" alt="" id="blackRook1" width="70px" data-piece="castle1" data-color="black" data-x ="0" data-y="1" ></div>
+            <div class="square m4" id="82" ><img src="img (2)/img/img/siyah_at2-removebg-preview.png" alt="" id="blackKnight1"  width="70px" data-piece="horse1" data-color="black"></div>
+            <div class="square m3" id="83" ><img src="img (2)/img/img/file siyah.png" alt="" id="blackBishop1" width="70px"  data-piece="elephant1" data-color="black"></div>
+            <div class="square m4" id="84" ><img src="img (2)/img/img/siyah_fazir-removebg-preview.png" alt="" id="blackKing" width="70px" data-piece="king" data-type="king" data-color="black" ></div>
+            <div class="square m3" id="85" ><img src="img (2)/img/img/siyah_taş-removebg-preview.png" alt="" id="blackBishop2" width="70px"  data-piece="minister1" data-color="black" ></div>
+            <div class="square m4" id="86" ><img src="img (2)/img/img/file siyah.png" alt="" id="blackKing" width="70px" data-piece="elephant1" data-color="black" ></div>
+            <div class="square m3" id="87" ><img src="img (2)/img/img/siyah_at2-removebg-preview.png" alt="" id="blackKnight2" width="70px" data-piece="horse1" data-color="black" ></div>
+            <div class="square m4" id="88" ><img src="img (2)/img/img/kale siyah (2).png" alt="" id="blackRook2" width="70px" data-piece="castle1" data-color="black" data-x ="0" data-y="1" ></div>
+        </div>
+        </div>
+        </header>
+    </div>
+    
+    <script src="e.js">
+    </script>
+</body>
+</html>
